@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ก่อร่าง สร้างเรื่อง</title>
+    <link rel="stylesheet" href="section_3_styles.css">
+    <link rel="stylesheet" href="section_3_mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="page1" >
+        <img src="./asset/Section3/desk_stuff_1.png" class="page1-hand" id="page1-hand">
+        <div class="page1-container">
+            <div class="page1-box" id="page1-box-1">
+                <div class="page1-box" id="page1-box-1"></div>
+                <div class="page1-text" id="page1-text-1">คุณเป็นนักก่อสร้างที่ดี?</div>
+                <img src="./asset/Section3/desk_stuff_2.png">
+            </div>
+            <div class="page1-text page1-text2" id="page1-text-2">มาพิสูจน์โครงการของคุณกัน</div>
+            <div class="page1-box" id="page1-box-2">
+                <img src="./asset/Section3/desk_stuff_3.png">
+            </div>
+            <div class="page1-text page1-text3" id="page1-text-3">ว่าคุณเป็นนักก่อสร้าง<br>หรือนักก่อเรื่อง?</div>
+            <div class="page1-box" id="page1-box-3">
+                <img class="page1-img-clipboard-logo" src="./asset/Section3/Logo.png">
+                <img class="page1-img-clipboard-checklist" src="./asset/Section3/checklist_stamp.png">
+                <div class="page1-clipboard-text"><p >คุณกำลังจะทำประเมินก่อนก่อสร้างโครงการสำคัญระดับพันล้าน! ลองมาเช็คกันดีกว่าว่าโครงการของคุณจะผ่านการประเมิญหรือไม่?</p></div>
+                <div class="page1-clipboard-submit"  data-page="1" onclick="changeSection(this)"><div>ทำแบบประเมิน</div></div>
+            </div>
+        </div>
+        <img src="./asset/Section3/desk_stuff_1.png" class="page1-hand" id="page1-hand">
+
+    </section>
+
+    <section class="page2" >
+        <div class="checklist">
+            <div class="checklist-content-background">
+                <div class="content-img" id="object-img">
+                    <img id="cl_1_1" src="./asset/Section3/checklist_1.1.png" >
+                    <img id="cl_1_2" src="./asset/Section3/checklist_1.2.png" >
+                </div>
+                <div class="checklist-content">
+                    <div class="content-child">
+                        <div class="content-head">
+                            <img src="./asset/Section3/checklist_clipboard tape.png" >
+                        </div>
+                        <div class=" content-head-text" id="content-head" data-count=1>
+                            <p>รายการ 1/5</p>
+                        </div>
+                    </div>
+                    <div class="content-child content-form">
+                        <form id="checkbox-form" action="">
+                            <div class="checkbox-0">
+                                <div class="checkbox-0-1">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox" data-val="1" onclick="showElem(this);handleClick(this)">
+                                </div>
+                            </div>
+                            <div class="checkbox-1">
+                                <div class="checkbox-0-2">
+                                    <p id="box-message">
+                                        ในขณะที่มีการก่อสร้างได้จัดทำผ้าใบทึบแสงหรือผ้าใบโปร่งแสงหรือวัสดุที่คล้ายกันมาปกคลุมตัวอาคารตลอดแนวอาคารจนกว่า    การดำเนินงานจะแล้วเสร็จ
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="content-child">
+                        <div class="text-img" id="rule-text">
+                            <p>ระเบียบและข้อปฏิบัติในการควบคุมฝุ่นละออง<br>จากการก่อสร้างอาคาร ข้อ 4.4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nextpage-container" data-page="2"  onclick="nextElem()">
+                    <p style="align-self: center;">ไซต์<br>ต่อไป</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page3" data-page="3">
+        <div class="page3-container">
+            <!-- ไฟ -->
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <img class="light" src="./asset/Section3/checklist_result3onlylight.png" alt="">
+            <!--  -->
+            <img id="result2" src="./asset/Section3/checklist_result2.png" alt="">
+            <img id="frence1" src="./asset/Section3/checklist_result3.png" alt="">
+            <img id="frence2" src="./asset/Section3/checklist_result3.png" alt="">
+            <img id="workman" src="./asset/Section2/Road digger.png" alt="">
+            <div class="page3-box">
+                <img id="stamp" src="./asset/Section3/checklist_stamp2.png" alt="">
+                <div class="page3-content">
+                    <h1>ผลการประเมิน</h1>
+                    <div class="result-box">
+                        <input class="checkbox-result" type="checkbox" id="checkbox1" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox2" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox3" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox4" disabled >
+                        <input class="checkbox-result" type="checkbox" id="checkbox5" disabled >
+                    </div>
+                    <h2 id="result-message"></h2>
+                    <div class="result-message">
+                        <h3 id="adv-message"></h3>
+                    </div>
+                    <a href="section_4.html">
+                        <button id="end-button-sec3" data-page="3" onclick="changeSection(this)">เข้าสู่เฟสต่อไป</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="scripts_section3.js"></script>
+</html>
+
